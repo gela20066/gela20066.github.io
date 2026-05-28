@@ -1,0 +1,12 @@
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.video-container iframe,
+.video-container video {
+    width: 70%;
+    height: 450px;
+    border-radius: 15px;
+}
