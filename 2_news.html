@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости | Башинформсвязь</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/news.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body onload="showNews()">
+    <div class="side-menu">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Логотип">
+            <h2>Башинформсвязь</h2>
+        </div>
+        <ul class="menu-items">
+            <li><a href="1_company.html">О компании</a></li>
+            <li><a href="2_news.html" class="active">Новости</a></li>
+            <li><a href="3_val.html">Курс валют</a></li>
+            <li><a href="4_data.html">Контактные данные</a></li>
+            <li><a href="5_video.html">Видео</a></li>
+        </ul>
+    </div>
+
+    <main class="main-content">
+        <h1>Новости компании</h1>
+        <div class="news-grid" id="newsContainer"></div>
+        <footer>
+            &copy; 2026 ПАО «Башинформсвязь»
+        </footer>
+    </main>
+
+    <button id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+    <script src="js/news.js"></script>
+</body>
+</html>

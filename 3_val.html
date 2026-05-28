@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс валют | Башинформсвязь</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/val.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="side-menu">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Логотип">
+            <h2>Башинформсвязь</h2>
+        </div>
+        <ul class="menu-items">
+            <li><a href="1_company.html">О компании</a></li>
+            <li><a href="2_news.html">Новости</a></li>
+            <li><a href="3_val.html" class="active">Курс валют</a></li>
+            <li><a href="4_data.html">Контактные данные</a></li>
+            <li><a href="5_video.html">Видео</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <h1>Курс индонезийской рупии (IDR)</h1>
+        <p><a href="https://www.cbr-xml-daily.ru/" target="_blank">Данные с cbr-xml-daily.ru</a></p>
+
+        <div id="rateBlock" class="val-card"></div>
+
+        <div class="val-card">
+            <h3>Конвертер валют</h3>
+            <div class="converter">
+                <div class="converter-box">
+                    <label>Рубли (RUB)</label>
+                    <input type="number" id="rubInput" placeholder="Сумма в рублях" value="0">
+                </div>
+                <div class="converter-box">
+                    <label>Индонезийские рупии (IDR)</label>
+                    <input type="number" id="idrInput" placeholder="Сумма в рупиях" value="0">
+                </div>
+            </div>
+        </div>
+
+        <div class="val-card">
+            <h3>Динамика курса IDR за последние 30 дней</h3>
+            <div class="diagram-container">
+                <div id="diagram" class="diagram"></div>
+            </div>
+            <div id="infoBlock" class="info-block">
+                Кликните на любой столбец, чтобы увидеть дату и курс
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 ПАО «Башинформсвязь»
+        </footer>
+    </main>
+
+    <button id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+    <script src="js/val.js"></script>
+</body>
+</html>

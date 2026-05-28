@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: row;
+}
+
+.side-menu {
+    order: 2;
+    width: 260px;
+    background: linear-gradient(135deg, #4a1d6d 0%, #1f0433 100%);
+    color: white;
+    padding: 30px 20px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff8c42;
+    padding-bottom: 20px;
+}
+
+.logo img {
+    width: 175px;
+}
+
+.logo h2 {
+    font-size: 20px;
+    color: #ff8c42;
+}
+
+.menu-items {
+    list-style: none;
+    flex: 1;
+}
+
+.menu-items li {
+    margin-bottom: 15px;
+}
+
+.menu-items a {
+    display: block;
+    padding: 12px 20px;
+    color: #f0e6ff;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.menu-items a:hover {
+    background-color: #ff8c42;
+    color: #2c0f42;
+    transform: scale(1.05);
+}
+
+.menu-items .active {
+    background-color: #ff8c42;
+    color: #2c0f42;
+    font-weight: bold;
+}
+
+.main-content {
+    order: 1;
+    flex: 1;
+    padding: 30px 40px;
+    background-color: #ffffff;
+}
+
+h1 {
+    color: #4a1d6d;
+    border-left: 6px solid #ff8c42;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+h2 {
+    color: #4a1d6d;
+    margin: 25px 0 15px 0;
+    font-size: 24px;
+}
+
+h3 {
+    color: #ff8c42;
+    margin: 15px 0 10px;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff8c42;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#scrollTopBtn:hover {
+    background-color: #4a1d6d;
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    color: #777;
+}
